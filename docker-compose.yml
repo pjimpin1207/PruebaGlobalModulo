@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  servidor_daw:
+    image: httpd:alpine
+    container_name: daw_app
+    networks:
+      red_daw:
+        ipv4_address: 172.20.0.10
+
+networks:
+  red_daw:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
