@@ -1,9 +1,10 @@
 version: '3.8'
-
 services:
   servidor_daw:
     image: httpd:alpine
     container_name: daw_app
+    volumes:
+      - ./app:/usr/local/apache2/htdocs/
     networks:
       red_daw:
         ipv4_address: 172.20.0.10
@@ -19,6 +20,17 @@ services:
       - ./certs:/etc/nginx/certs:ro
     depends_on:
       - servidor_daw
+    networks:
+      - red_daw
+
+  sftp_server:
+    image: atmoz/sftp:alpine
+    container_name: daw_sftp
+    ports:
+      - "2222:22"
+    command: deploy_user:Secreta123:::app
+    volumes:
+      - ./app:/home/deploy_user/app
     networks:
       - red_daw
 
