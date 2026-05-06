@@ -42,7 +42,7 @@ Para asegurar las comunicaciones, he añadido un contenedor con Nginx (`nginx:al
 
 **Capturas de la creacion del certificado:**
 
-![Captura de la creacion del certificado](./capturas/generarcertificado.png.png)
+![Captura de la creacion del certificado](./capturas/generarcertificado.png)
 
 **Configuración Nginx:**
 
@@ -72,7 +72,7 @@ El código de la aplicación lo he alojado en el directorio local `./app`, y lo 
 
 **Prueba del funcionamiento:**
 
-![Prueba del funcionamiento](./capturas/pruebadefuncionamiento.png.png)
+![Prueba del funcionamiento](./capturas/pruebadefuncionamiento.png)
 
 *Con esta captura evidencio que el despliegue es exitoso. El usuario accede por HTTPS a través del puerto seguro de Nginx, y este se comunica internamente con el contenedor Apache (`daw_app`) para devolver el contenido, demostrando la correcta integración de ambas capas.*
 
