@@ -58,7 +58,7 @@ Para asegurar las comunicaciones, he añadido un contenedor con Nginx (`nginx:al
 
 **Prueba de funcionamiento y Certificado:**
 
-![Prueba de funcionamiento y Certificado](./capturas/pruebadefuncionamientocertificado.png.png)
+![Prueba de funcionamiento y Certificado](./capturas/pruebadefuncionamientocertificado.png)
 
 *Al acceder al servidor web, Nginx fuerza automáticamente la conexión a HTTPS. El navegador muestra la advertencia esperada al ser un certificado autofirmado, pero la encriptación SSL está activa y encriptando el tráfico.*
 
