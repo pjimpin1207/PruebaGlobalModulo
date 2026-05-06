@@ -142,6 +142,4 @@ Para probar la monitorización, he lanzado peticiones a recursos inexistentes (`
 
 Durante todo el proceso de despliegue, he gestionado la carpeta de configuración mediante un repositorio Git local. He realizado diversos *commits* lógicos que reflejan la evolución de la infraestructura (creación de la red, proxy inverso, servidor SFTP, etc.). 
 
-Adjunto la carpeta oculta `.git` con todo el árbol de historial de versiones de forma comprimida junto con este documento PDF, cumpliendo así con los requisitos técnicos de entrega del proyecto integrador.
-
 También he subido el repositorio a GitHub: [https://github.com/pjimpin1207/PruebaGlobalModulo](https://github.com/pjimpin1207/PruebaGlobalModulo)
